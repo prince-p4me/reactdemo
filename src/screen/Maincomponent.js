@@ -9,21 +9,19 @@ export const MainComponent = ({
   handleDecrementClick,
 }) => {
   return (
-    <div>
+    <section >
       <HeaderComponent />
-      <div style={{ backgroundColor: "#6f06ce", height: "100%" }}>
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-6">
-              <Leftcomponent />
-            </div>
-            <div className="col-sm-6">
-              <Rightcomponent />
-            </div>
+      <div className="container-fluid" style={{ backgroundColor: "#6f06ce" }}>
+        <div className="row">
+          <div className="col-sm-6">
+            <Leftcomponent />
+          </div>
+          <div className="col-sm-6">
+            <Rightcomponent />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
