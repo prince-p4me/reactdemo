@@ -1,8 +1,9 @@
-import counterReducer from "./list";
+import { getAllList, getSelectedList } from "./list";
 import { combineReducers } from "redux";
 
 const rootReducer = combineReducers({
-  counter: counterReducer
+  list: getAllList,
+  selected: getSelectedList
 })
 
 export default rootReducer;

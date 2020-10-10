@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { store } from "./Redux/configure-store";
-import { Container } from "./screen/container";
+import Maincomponent from "./screen/Maincomponent";
 
 const App = () => (
   <Provider store={store}>
-    <Container />
+    <Maincomponent />
   </Provider>
 );
 

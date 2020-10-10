@@ -3,11 +3,7 @@ import Leftcomponent from "./Leftcomponent";
 import Rightcomponent from "./Rightcomponent";
 import HeaderComponent from "../component/header";
 
-export const MainComponent = ({
-  count,
-  handleIncrementClick,
-  handleDecrementClick,
-}) => {
+const MainComponent = (props) => {
   return (
     <section >
       <HeaderComponent />
@@ -25,4 +21,4 @@ export const MainComponent = ({
   );
 };
 
-// export defa  ult MainComponent;
+export default MainComponent;
