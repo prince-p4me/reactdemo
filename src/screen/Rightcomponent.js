@@ -23,7 +23,6 @@ const Rightcomponent = props => {
     if (typeof totalLanguage === 'object') {
       totalLanguage = totalLanguage.count;
     }
-    console.log("totalLanguage is:--" + totalLanguage);
     setTotal(totalLanguage);
   }, [LanguageList]);
 
