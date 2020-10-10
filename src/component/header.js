@@ -2,15 +2,21 @@ import React, { useState } from "react";
 
 const HeaderComponent = ({ }) => {
   return (
-    <div className="container">
+    <div className="container-fluid" style={{ padding: 0 }}>
       <nav className="navbar navbar-expand-lg navbar-light bg-white">
         <div className="container">
           <div className="row" style={{ width: "100%" }}>
-            <div className="col-sm-4">
-              <a className="navbar-brand" href="#" style={{ color: "#6f06ce", fontSize: 19, fontWeight: "bold" }}>LOGO</a>
+            <div className="col-md-4">
+              <a className="navbar-brand" href="#" style={{
+                color: "#6f06ce", marginTop: 5,
+                fontSize: 19, fontWeight: "bold"
+              }}>LOGO</a>
             </div>
-            <div className="col-sm-8">
-              <form className="form-inline my-2 my-lg-0">
+            <div className="col-md-8">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <form className="form-inline my-2 my-md-12">
                 <div className="collapse navbar-collapse" id="navbarNav">
                   <ul className="navbar-nav ml-auto">
                     <li className="nav-item ">

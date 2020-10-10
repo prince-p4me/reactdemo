@@ -5,9 +5,9 @@ import HeaderComponent from "../component/header";
 
 const MainComponent = (props) => {
   return (
-    <section >
+    <section style={{ backgroundColor: "#6f06ce" }}>
       <HeaderComponent />
-      <div className="container-fluid" style={{ backgroundColor: "#6f06ce" }}>
+      <div className="container-fluid">
         <div className="row">
           <div className="col-sm-6">
             <Leftcomponent />

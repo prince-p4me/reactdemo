@@ -8,11 +8,11 @@ const Leftcomponent = ({ }) => {
 
   const handleInputChange = (pIndex, cIndex) => {
     var list = Object.assign([], LanguageList);
-    // list[pIndex].subItems[cIndex].check = !list[pIndex].subItems[cIndex].check;
     list[pIndex].subItems[cIndex].check = (list[pIndex].subItems[cIndex].check == 1 ? 0 : 1);
-    // console.log("check is:-" + list[pIndex].subItems[cIndex].check);
     list[pIndex].count = list[pIndex].subItems.reduce((a, b) => ({ check: a.check + b.check }));
-    console.log("total language is:-" + list[pIndex].count);
+    if (typeof list[pIndex].count === 'object') {
+      list[pIndex].count = list[pIndex].count.check;
+    }
     dispatch(Actions.setList(list));
   };
 
